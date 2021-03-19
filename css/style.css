@@ -24,19 +24,55 @@ body {
   display: table;
 }
 
+.layer {
+  height: 100%;
+  background-color: rgba(155, 151, 151, 0.397);
+}
+
+.vl {
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: middle;
+  border-left: 1px solid grey;
+  height: 80%;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
 /* header */
-div.logo > img {
+div.logo {
+  height: 60px;
+  line-height: 60px;
+}
+img.img-logo {
   height: 50px;
+  vertical-align: middle;
+}
+div.logo > i {
+  font-size: 20px;
+  margin: 0 5px;
+  height: 60px;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+}
+
+.logo > i:hover,
+.inline-list a:hover {
+  color: black;
 }
 
 header > nav {
-  height: 5vh;
+  /* height: 15vh; */
+  margin-top: 10px;
   background-color: #e579e6;
 }
 .inline-list li {
+  margin-right: 10px;
   display: inline-block;
-  text-transform: uppercase;
   list-style: none;
+  text-transform: uppercase;
 }
 .inline-list a {
   text-decoration: none;
@@ -44,18 +80,16 @@ header > nav {
 }
 
 .banner {
-  height: calc(65vh - 20px);
+  /* height: calc(65vh - 20px); */
+  height: 70vh;
   margin-top: 20px;
   background-image: url(../img/banner.jpg);
   background-position: center;
   background-size: cover;
   color: white;
-  border-radius: 20px;
 }
-.layer {
-  height: 100%;
-  border-radius: 20px;
-  background-color: rgba(155, 151, 151, 0.397);;
+.banner > div {
+  padding: 200px 50px;
 }
 
 /* main */
