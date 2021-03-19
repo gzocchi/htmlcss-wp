@@ -24,6 +24,10 @@ body {
   display: table;
 }
 
+.hover_bk:hover {
+  color: #000000;
+}
+
 .layer {
   height: 100%;
   background-color: rgba(155, 151, 151, 0.397);
@@ -58,15 +62,10 @@ div.logo > i {
   /* vertical-align: middle; */
 }
 
-.logo > i:hover,
-.inline-list a:hover {
-  color: black;
-}
-
 header > nav {
   /* height: 15vh; */
-  margin-top: 10px;
-  background-color: #e579e6;
+  margin-top: 20px;
+  /* background-color: #e579e6; */
 }
 .inline-list li {
   margin-right: 10px;
@@ -87,9 +86,15 @@ header > nav {
   background-position: center;
   background-size: cover;
   color: white;
+  position: relative;
 }
-.banner > div {
-  padding: 200px 50px;
+.banner .banner-info {
+  max-height: 30vh;
+  max-width: 60vw;
+  position: absolute;
+  bottom: 10vh;
+  left: 3vw;
+  overflow: hidden;
 }
 
 /* main */
@@ -99,10 +104,14 @@ main {
 main > * {
   background-color: #abcfe7;
 }
-main > div.title {
+h1 {
+  color: #272727;
+}
+
+/* main > div.title {
   height: 10vh;
   width: 100%;
-}
+} */
 main > aside {
   height: calc(70vh - 40px);
   width: 25%;
