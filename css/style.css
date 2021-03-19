@@ -42,7 +42,7 @@ body {
   display: inline-block;
   margin: 0 20px;
   vertical-align: middle;
-  border-left: 1px solid grey;
+  border-left: 1px solid rgba(128, 128, 128, 0.637);
   height: 80%;
 }
 
@@ -78,6 +78,7 @@ header > nav {
   text-transform: uppercase;
 }
 
+div.logo > a,
 .inline-list a,
 .ico a {
   text-decoration: none;
