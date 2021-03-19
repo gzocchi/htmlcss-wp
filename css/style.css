@@ -14,6 +14,9 @@ body {
 .text-dark {
   color: #272727;
 }
+.hover_bk:hover {
+  color: #000000;
+}
 
 .container {
   width: 80vw;
@@ -26,13 +29,13 @@ body {
   display: table;
 }
 
-.hover_bk:hover {
-  color: #000000;
-}
-
 .layer {
   height: 100%;
   background-color: rgba(155, 151, 151, 0.397);
+}
+
+.rounded {
+  border-radius: 10px;
 }
 
 .vl {
@@ -43,23 +46,26 @@ body {
   height: 80%;
 }
 
-.rounded {
-  border-radius: 10px;
-}
-
 /* header */
 div.logo {
   height: 60px;
   line-height: 60px;
+  overflow: hidden;
 }
 img.img-logo {
   height: 50px;
   vertical-align: middle;
 }
-div.logo > i {
+
+div.ico {
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
+}
+.ico > i {
   font-size: 20px;
   margin: 0 5px;
-  height: 60px;
+  vertical-align: middle;
 }
 
 header > nav {
@@ -95,6 +101,10 @@ header > nav {
 }
 
 /* main */
+.title a {
+  text-decoration: none;
+}
+
 main > aside {
   width: 25%;
   margin: 20px 0;
