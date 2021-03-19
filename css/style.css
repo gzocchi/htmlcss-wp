@@ -62,9 +62,9 @@ div.ico {
   line-height: 60px;
   display: inline-block;
 }
-.ico > i {
+div.ico > a > i {
   font-size: 20px;
-  margin: 0 5px;
+  margin: 0 8px;
   vertical-align: middle;
 }
 
@@ -77,7 +77,8 @@ header > nav {
   list-style: none;
   text-transform: uppercase;
 }
-.inline-list a {
+.inline-list a,
+.ico a {
   text-decoration: none;
   color: gray;
 }
@@ -92,8 +93,8 @@ header > nav {
   position: relative;
 }
 .banner .banner-info {
-  max-height: 30vh;
-  max-width: 60vw;
+  max-height: 40vh;
+  max-width: 45vw;
   position: absolute;
   bottom: 10vh;
   left: 3vw;
