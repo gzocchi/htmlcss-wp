@@ -1,0 +1,93 @@
+/* debug */
+/* debug */
+
+/* common */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+}
+
+.container {
+  /* height: 80vh; */
+  width: 80vw;
+  margin: 20px auto 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* header */
+div.logo > img {
+  height: 50px;
+}
+
+header > nav {
+  height: 5vh;
+  background-color: #e579e6;
+}
+.inline-list li {
+  display: inline-block;
+  text-transform: uppercase;
+  list-style: none;
+}
+.inline-list a {
+  text-decoration: none;
+  color: gray;
+}
+
+.banner {
+  height: calc(65vh - 20px);
+  margin-top: 20px;
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 20px;
+}
+.layer {
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(155, 151, 151, 0.397);;
+}
+
+/* main */
+main {
+  background-color: #0089fe;
+}
+main > * {
+  background-color: #abcfe7;
+}
+main > div.title {
+  height: 10vh;
+  width: 100%;
+}
+main > aside {
+  height: calc(70vh - 40px);
+  width: 25%;
+  margin: 20px 0;
+}
+main > article {
+  height: calc(70vh - 40px);
+  width: calc(50% - 40px);
+  margin: 20px;
+}
+
+.col {
+  float: left;
+}
+
+/* footer */
+footer {
+  height: 10vh;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #8801fe;
+}
