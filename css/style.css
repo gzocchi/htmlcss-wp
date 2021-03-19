@@ -98,29 +98,34 @@ header > nav {
 }
 
 /* main */
-main {
-  background-color: #0089fe;
-}
-main > * {
-  background-color: #abcfe7;
-}
 h1 {
   color: #272727;
 }
 
-/* main > div.title {
-  height: 10vh;
-  width: 100%;
-} */
 main > aside {
-  height: calc(70vh - 40px);
+  /* height: calc(70vh - 40px); */
   width: 25%;
   margin: 20px 0;
 }
 main > article {
-  height: calc(70vh - 40px);
+  /* height: calc(70vh - 40px); */
   width: calc(50% - 40px);
   margin: 20px;
+}
+
+.img_main {
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+}
+.col-left div.img_main {
+  background-image: url(../img/img-1.jpg);
+}
+.col-right div.img_main {
+  background-image: url(../img/img-3.jpg);
+}
+.col-center div.img_main {
+  background-image: url(../img/banner-2.jpg);
 }
 
 .col {
